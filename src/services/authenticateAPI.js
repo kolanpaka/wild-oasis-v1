@@ -2,8 +2,8 @@
 
 // import { redirect } from "../utils/redirect";
 import supabase from "./supabase";
-import uploadImage from "./UploadImage";
-import deleteImage from "./DeleteImage";
+import uploadImage from "./uploadImage";
+import deleteImage from "./deleteImage";
 
 const BASE_URL =
   "https://amoeidozdmndtgzcmxdc.supabase.co/storage/v1/object/public/admin-profiles/";
