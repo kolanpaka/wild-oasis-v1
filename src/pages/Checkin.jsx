@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import BookingDetailsCard from "../features/bookings/BookingDetailsCard";
 import Button from "../UI/Button";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { getSettings } from "../services/settingsApi";
+import { getSettings } from "../services/settingsAPI";
 import Spinner from "../UI/Spinner";
 import { differenceInCalendarDays } from "date-fns";
 import { useState } from "react";
