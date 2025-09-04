@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --font-sans: Poppins, sans-serif;
+  --font-sono: "Sono", monospace;
+  
+  --animate-rotate: rotate 1s infinite linear;
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+@layer components {
+  .active {
+    @apply bg-indigo-50 font-semibold text-slate-700 shadow shadow-indigo-300;
+  }
+
+  .active svg {
+    @apply stroke-2 text-indigo-700;
+  }
+  .heading {
+    @apply text-3xl font-semibold text-slate-700;
+  }
+  .spinner {
+    margin: 4.8rem auto;
+
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+      radial-gradient(farthest-side, var(--color-indigo-600) 94%, #0000)
+        top/10px 10px no-repeat,
+      conic-gradient(#0000 30%, var(--color-indigo-600));
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 10px),
+      #000 0
+    );
+  }
+ 
+}
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+/* .dark {
+  --color-base: var(--color-red-700);
+} */
+
+/* indigo-700 */
+/* slate-700 */
+/* slate-500*/
+/* slate-800*/
+/*slate-200*/
+/*slate-white*/
+
+/* @source "../node_modules/@heroui/theme/dist*.{js,ts,jsx,tsx}"; */
+/* @source 'node_modules/@heroui/theme/dist*.{js,ts,jsx,tsx}' */
+
+
+
